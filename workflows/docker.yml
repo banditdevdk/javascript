@@ -1,0 +1,12 @@
+name: Docker Hello World
+
+on:
+  push:
+
+jobs:
+  docker-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run Docker Hello World
+        run: docker run hello-world
