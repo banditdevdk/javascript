@@ -13,3 +13,6 @@ jobs:
 
       - name: Run script
         run: bash container.sh
+
+      - name: Run script
+        run: bash container.sh
