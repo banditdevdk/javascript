@@ -16,3 +16,6 @@ jobs:
 
       - name: Run script
         run: bash container.sh
+
+      - name: Build Docker image
+        run: docker build -t new-image
