@@ -3,4 +3,4 @@ docker run -d --name hello-world nginx
 
 docker exec hello-world ls /usr/share/nginx/html
 
-docker logs hello_world
+docker logs hello-world
