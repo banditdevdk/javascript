@@ -1,12 +1,15 @@
-name: Docker Hello World
+name: main
 
 on:
   push:
 
 jobs:
-  docker:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run hello-world
-        run: docker run hello-world
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run script
+        run: bash container.sh
